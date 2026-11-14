@@ -183,6 +183,63 @@ main.container {
     background-color: #edf1f5;
 }
 
+/* formulario */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form__label {
+    font-weight: bold;
+}
+
+.form__input,
+.form__select,
+.form__textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #A599B5;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.form__textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form__input:focus,
+.form__select:focus,
+.form__textarea:focus {
+    outline: 2px solid #456b8c;
+    border-color: #456b8c;
+}
+
+.form__options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.form__options label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.form__help {
+    font-size: 13px;
+    color: #666666;
+}
 
 /* Footer */
 .footer {

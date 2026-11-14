@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self'; img-src 'self'; style-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none';">
+
+    <title>Contacto | Mi Portafolio</title>
+
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="header__container">
+
+            <p class="header__logo">Mi Portafolio</p>
+
+            <nav class="nav" aria-label="Navegación principal">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Inicio</a></li>
+                    <li><a href="acerca.html" class="nav__link">Acerca de</a></li>
+                    <li><a href="proyectos.html" class="nav__link">Proyectos</a></li>
+                    <li><a href="contacto.html" class="nav__link nav__link--active" aria-current="page">Contacto</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main class="container">
+
+        <section class="section">
+
+            <h1 class="section__title">
+                Contáctame
+            </h1>
+
+            <p class="section__text">
+                Completa el siguiente formulario para
+                comunicarte conmigo.
+            </p>
+
+            <form class="form" action="#" method="post"
+                  enctype="multipart/form-data">
+
+                <div class="form__row">
+
+                    <div class="form__group">
+
+                        <label for="nombre" class="form__label">
+                            Nombre completo
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            class="form__input"
+                            placeholder="Escribe tu nombre"
+                            minlength="3"
+                            maxlength="60"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="form__group">
+
+                        <label for="email" class="form__label">
+                            Correo electrónico
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="form__input"
+                            placeholder="ejemplo@correo.com"
+                            maxlength="100"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="form__group">
+
+                    <label for="password" class="form__label">
+                        Contraseña temporal
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        class="form__input"
+                        minlength="8"
+                        maxlength="30"
+                        autocomplete="new-password"
+                        placeholder="Mínimo 8 caracteres"
+                        required
+                    >
+
+                </div>
+
+                <div class="form__group">
+
+                    <label for="asunto" class="form__label">
+                        Motivo de contacto
+                    </label>
+
+                    <select
+                        id="asunto"
+                        name="asunto"
+                        class="form__select"
+                        required
+                    >
+
+                        <option value="">Selecciona una opción</option>
+
+                        <option value="consulta">
+                            Consulta
+                        </option>
+
+                        <option value="proyecto">
+                            Propuesta de proyecto
+                        </option>
+
+                        <option value="trabajo">
+                            Oportunidad laboral
+                        </option>
+
+                        <option value="otro">
+                            Otro
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="form__group">
+
+                    <span class="form__label">
+                        ¿Cómo prefieres recibir respuesta?
+                    </span>
+
+                    <div class="form__options">
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="respuesta"
+                                value="correo"
+                                required
+                            >
+                            Correo electrónico
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="respuesta"
+                                value="telefono"
+                            >
+                            Teléfono
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <div class="form__group">
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="terminos"
+                            value="aceptado"
+                            required
+                        >
+                        Acepto los términos y condiciones.
+                    </label>
+
+                </div>
+
+                <div class="form__group">
+
+                    <label for="archivo" class="form__label">
+                        Adjuntar archivo (opcional)
+                    </label>
+
+                    <input
+                        type="file"
+                        id="archivo"
+                        name="archivo"
+                        class="form__input"
+                        accept=".pdf,.jpg,.jpeg,.png"
+                    >
+
+                    <small class="form__help">
+                        Formatos permitidos: PDF, JPG y PNG.
+                    </small>
+
+                </div>
+
+                <div class="form__group">
+
+                    <label for="mensaje" class="form__label">
+                        Mensaje
+                    </label>
+
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        class="form__textarea"
+                        placeholder="Escribe tu mensaje..."
+                        minlength="10"
+                        maxlength="500"
+                        required
+                    ></textarea>
+
+                </div>
+
+                <!-- BOTONES -->
+                <div class="form__options">
+
+                    <button
+                        type="submit"
+                        class="button button--primary"
+                    >
+                        Enviar formulario
+                    </button>
+
+                    <button
+                        type="reset"
+                        class="button button--primary"
+                    >
+                        Limpiar formulario
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Mi Portafolio. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
